@@ -1,0 +1,35 @@
+{
+  "name": "vue2-webpack-tamplate",
+  "productName": "XXX项目",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:stage": "vue-cli-service build --mode staging",
+    "preview": "node build/index.js --preview",
+    "lint": "eslint --ext .js,.vue src",
+    "test:unit": "jest --clearCache && vue-cli-service test:unit",
+    "test:ci": "npm run lint && npm run test:unit"
+  },
+  "dependencies": {
+    "ant-design-vue": "1.7.8",
+    "compression-webpack-plugin": "^10.0.0",
+    "core-js": "^3.8.3",
+    "dayjs": "^1.11.3",
+    "filemanager-webpack-plugin": "2.0.5",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2",
+    "webpack-bundle-analyzer": "4.5.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "less": "^4.0.0",
+    "less-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
